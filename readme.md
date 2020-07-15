@@ -2,7 +2,7 @@
 
 ### Included Scripts
 
-`make_cloveros_distro.sh` - Makes the root filesystem of CloverOS, ready for deployment as an out-of-the-box Gentoo image (stage4) with binhost
+`make_cloveros_distro.sh` - Makes the root filesystem tarball of CloverOS, ready for deployment as an out-of-the-box Gentoo image (stage4) with binhost
 
 `clean.sh` - Clean up and remove output left by the scripts.
 
@@ -11,3 +11,7 @@
 ### License
 
 See [here](/LICENSE)
+
+### Help
+
+Would be greatly appreciated!
