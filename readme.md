@@ -1,5 +1,7 @@
 # CloverOS GNU/Linux for Windows Subsystem for Linux (WIP)
 
+This is a fork of [Microsoft's WSL Distro Launcher](https://github.com/microsoft/WSL-DistroLauncher) w/ CloverOS GNU/Linux
+
 ### Included Scripts
 
 `make_cloveros_distro.sh` - Makes the root filesystem tarball of CloverOS, ready for deployment as an out-of-the-box Gentoo image (stage4) with binhost
