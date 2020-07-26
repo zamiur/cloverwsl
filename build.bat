@@ -38,6 +38,10 @@ if exist "%ProgramFiles%\MSBuild\14.0\bin" (
     set MSBUILD="%ProgramFiles%\MSBuild\14.0\bin\msbuild.exe"
     goto :FOUND_MSBUILD
 )
+if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe" (
+    set MSBUILD="%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe"
+    goto :FOUND_MSBUILD
+)
 
 if %MSBUILD%==() (
     echo "I couldn't find MSBuild on your PC. Make sure it's installed somewhere, and if it's not in the above if statements (in build.bat), add it."

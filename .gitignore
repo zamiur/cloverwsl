@@ -297,3 +297,5 @@ DistroLauncher/messages.h
 *.exe
 *.tar.gz
 distro
+rootfs
+temp

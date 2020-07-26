@@ -22,6 +22,23 @@ This is a fork of [Microsoft's WSL Distro Launcher](https://github.com/microsoft
 
 `build.bat` - makes the "distro launcher" appx.
 
+### Instructions
+
+Make a copy of this repository
+
+```
+git clone https://github.com/zamiur/cloverwsl.git
+```
+
+Run the `make_cloveros_distro.sh` script to generate the distro.tar.gz. Then after that, move the archive to the root of the project file
+
+Generate a test certificate:
+
+1. In Visual Studio, open `DistroLauncher-Appx/MyDistro.appxmanifest`
+2. Select the Packaging tab
+3. Select "Choose Certificate"
+4. Click the Configure Certificate drop down and select Create test certificate.
+
 ### Commands
 
 `cloveros.exe`
