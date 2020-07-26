@@ -42,11 +42,18 @@ Launches the user's default shell in the user's home directory.
 
 - Configure settings for this distribution.
 - Settings:
-  - `--default-user <username>`: Sets the default user to . This must be an existing user.
+  - `--default-user <username>`: Sets the default user to <username>. This must be an existing user.
 
 `cloveros.exe help`
 
 - Print usage information.
+
+### Known Issues
+
+**make_cloveros_distro.sh**
+
+- `tar: ./dev/<device_name>: Cannot mknod: Operation not permitted`
+- 
 
 ### License
 
