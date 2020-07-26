@@ -6,7 +6,7 @@ fi
 
 gitprefix="https://gitgud.io/cloveros/cloveros/raw/master"
 rootpassword=password
-username=livecd
+username=$USER
 userpassword=password
 
 mkdir distro/
@@ -125,8 +125,8 @@ chown -R $username /home/$username/
 rm -Rf /var/db/repos/*
 
 rm -Rf /var/cache/binpkgs/* /var/cache/edb/binhost/* /etc/resolv.conf /etc/portage/package.use/
-tar -czvf distro.tar.gz /
+tar -czf distro.tar.gz /
 exit
 HEREDOC
 
-tar -czvf distro.tar.gz /
+
