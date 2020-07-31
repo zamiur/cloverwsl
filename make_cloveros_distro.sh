@@ -6,7 +6,7 @@ fi
 
 gitprefix="https://gitgud.io/cloveros/cloveros/raw/master"
 rootpassword=password
-username=$USER
+username=user
 userpassword=password
 
 mkdir distro/
@@ -23,8 +23,7 @@ mount --rbind /dev dev
 mount --rbind /sys sys
 
 cat <<HEREDOC | chroot .
-mkdir /var/db/repos/gentoo
-emerge-webrsync
+# emerge-webrsync
 eselect profile set "default/linux/amd64/17.1/hardened"
 PORTAGE_BINHOST="https://cloveros.ga" emerge -G aria2
 while ! gpg --list-keys "CloverOS GNU/Linux (Package signing)"; do gpg --keyserver hkp://pool.sks-keyservers.net --recv-key "78F5 AC55 A120 07F2 2DF9 A28A 78B9 3F76 B8E4 2805"; done
