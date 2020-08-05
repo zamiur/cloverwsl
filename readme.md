@@ -16,11 +16,13 @@ This is a fork of [Microsoft's WSL Distro Launcher](https://github.com/microsoft
 
 ### Included Scripts
 
-`make_cloveros_distro.sh` - Makes the root filesystem tarball of CloverOS, ready for deployment as an out-of-the-box Gentoo image (stage4) with binhost
+`make_cloveros_distro.sh` - Makes the root filesystem tarball of CloverOS. This will be the equivalent of a stage3 Gentoo image
+
+`setup.sh` - The script that runs upon startup of the WSL instance once only and finishes setting up everything including programs, wallpapers, Portage configuration and everything else equivalent to a minimal installation of CloverOS
 
 `clean.sh` - Clean up and remove output left by the scripts.
 
-`build.bat` - makes the "distro launcher" appx.
+`build.bat` - makes the "distro launcher" appx. *TODO: Make it work on Visual Studio 2019*
 
 ### Instructions
 
